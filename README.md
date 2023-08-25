@@ -87,6 +87,6 @@ These instructions will help you set up and run the project on your local machin
 
     - Endpoint: `/update-rating`
     - Method: POST
-    - Description: Takes `movieId` and `rating` from the user and updates the rating with the overall rating and increases vote_count by 1.
+    - Description: Takes `movieId` and `rating` from the user and updates the rating with the overall rating and increases vote_count by 1. Requires `Authorization` token to verify the user
 
 
