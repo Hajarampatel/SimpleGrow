@@ -63,19 +63,19 @@ These instructions will help you set up and run the project on your local machin
    
     - Endpoint: `/register`
     - Method: POST
-    - Description: Register with a username and password. Includes validation.
+    - Description: Requires `username` and `password`  in body to verify the user. Includes validation.
 
 2. **Login**
    
     - Endpoint: `/login`
     - Method: POST
-    - Description: Login with a username and password. Returns a JWT token with a time limit of 1 hour.
+    - Description:  Requires `username` and `password`  in body to verify the user and returns a JWT token with a time limit of 1 hour.
 
 3. **Movie List**
 
     - Endpoint: `/movielist`
     - Method: GET
-    - Description: Requires `Authorization` token to verify the user and returns a list of movie data with a limit of 20. For the next page, mention the page number in parameters (`?page=2`).
+    - Description: Requires `Authorization` token in Header to verify the user and returns a list of movie data with a limit of 20. For the next page, mention the page number in parameters (`?page=2`).
 
 4. **Movie Ratings**
 
@@ -87,6 +87,6 @@ These instructions will help you set up and run the project on your local machin
 
     - Endpoint: `/update-rating`
     - Method: POST
-    - Description: Takes `movieId` and `rating` from the user and updates the rating with the overall rating and increases vote_count by 1. Requires `Authorization` token to verify the user
+    - Description: Takes `movieId` and `rating` from the user and updates the rating with the overall rating and increases vote_count by 1. Requires `Authorization` token in Header to verify the user
 
 
